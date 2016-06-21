@@ -1,0 +1,9 @@
+<ul class="list-group itemlist">
+  <li ng-repeat="item in selectedItems" class="list-group-item">
+  	<strong>{{item.category}}</strong>
+  	<p>{{item.brand}} - {{item.name}}</p>
+  	<p>€{{item.price}},-</p>
+  </li>
+</ul>
+<p>Total: €{{totalPrice}},-</p>
+<button class="btn btn-large btn-success" ng-if="complete" ui-sref="finished">Done!</button>
